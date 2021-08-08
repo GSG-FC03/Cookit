@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #ff9d00;
+  font-family: "Sansita", sans-serif;
+}
+#container {
+  background-color: #fff;
+  border-radius: 20vw;
+  margin: 4.5vw;
+}
+
+#Img {
+  width: 80vw;
+  margin-top: 52vw;
+  align-items: center;
+}
+h1 {
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+h5 {
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+i {
+  /* align-items: center;
+  margin-left: 38vw; */
+  font-size: 11vw;
+  /* margin-bottom: 58%; */
+}
+button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  width: 12vw;
+  height: 12vw;
+  margin-left: 38vw;
+
+  margin-bottom: 58%;
+  border-radius: 100%;
+}
+button:hover{
+  color: #ff9d00;
+  cursor: pointer;
+}
+button:active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
