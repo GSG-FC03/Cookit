@@ -1,0 +1,127 @@
+body{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.05rem;
+    font-family: "Sansita", sans-serif;
+
+}
+
+
+
+.Search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+
+}
+.Search-type,
+.search-btn{width: 45%;}
+.Search-type{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid orange;
+    color: orange;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem ;
+    padding-left: 20vw;
+    padding-right: 15vw;
+}
+.Search-type::placeholder{
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: orange;
+    color:white;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.45s linear;
+
+
+}
+.search-btn:hover{
+    background: orangered;
+}
+.Search-results {
+    margin-top: 4rem;
+}
+.Area{
+    height: 55px;
+    width: 160px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem ;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    padding-left: 1.5vw;
+
+}
+.meal-box{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4 21 -12 black;
+    margin: 2rem 0;
+}
+.meal-img img{
+    width: 100%;
+    display: block;
+}
+.meal-name{
+    padding: 1.5rem 0.5rem;
+}
+.meal-name h2{
+    font-size: 1.4rem;
+}
+.recipe-button{
+    text-decoration: none;
+    color: white;
+    background: orange;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    transition: all 0.45 linear;
+
+}
+.recipe-button:hover{
+    background: orange;
+}
+@media screen and(min-width:600px){
+    .Search-box{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media  (min-width:992px){
+     
+    #meal{
+       
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap:2rem;
+    }
+
+    .meal-box{margin:0;}
+}
+    
+
+    
