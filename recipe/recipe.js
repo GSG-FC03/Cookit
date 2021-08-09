@@ -1,13 +1,13 @@
-const app = document.getElementsByClassName("recipe");
-const RecipeName = document.getElementsByClassName("recipe name");
-const Category = document.getElementsByClassName("Category");
-const image = document.getElementsByClassName("image");
-const description = document.getElementsByClassName("recipe description");
-const recipeN = document.getElementsByClassName("recipeN");
-const p = document.getElementsByTagName("p");
+const app = document.getElementsByClassName("recipe")[0];
+const RecipeName = document.getElementsByClassName("recipe name")[0];
+const Category = document.getElementsByClassName("Category")[0];
+const image = document.getElementsByClassName("image")[0];
+const description = document.getElementsByClassName("recipe description")[0];
+const recipeN = document.getElementsByClassName("recipeN")[0];
+const p = document.getElementsByTagName("p")[0];
 
 
-fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s= `)
+fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=52977 ")
         .then((response) => {
           if (response.status !== 200) {
             console.log(
@@ -19,8 +19,9 @@ fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s= `)
           }
         })
         .then((data) => {
-          let dat = data.meals;
-          for (element of dat) {
+          let meal = data.meals;
+          console.log(meal)
+          for (element of meal) {
           
             // Create a h1 with class =recipe name  
           
