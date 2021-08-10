@@ -141,9 +141,11 @@ body {
     color: #000000;
   }
 
-  #GetRecipesBtns:focus {
+  #GetRecipesBtn:active {
     background-color: #ff9d00;
     color: rgb(255, 255, 255);
+    border: none;
+
   }
   /* #meal-div div:nth-last-child:nth-last-child(-n + 2) {
     display: block;
