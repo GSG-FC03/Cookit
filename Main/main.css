@@ -135,7 +135,16 @@ body {
     font-size: 2vw;
     padding-bottom: 0.5vw;
   }
+  #GetRecipesBtn:hover {
+    border: .3vw solid #000000;
+    background-color: white;
+    color: #000000;
+  }
 
+  #GetRecipesBtns:focus {
+    background-color: #ff9d00;
+    color: rgb(255, 255, 255);
+  }
   /* #meal-div div:nth-last-child:nth-last-child(-n + 2) {
     display: block;
   } */
