@@ -85,7 +85,7 @@ body {
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
   #country-container {
-    margin-top: 0vw;
+    margin-top: 8vw;
     margin-bottom: 5vw;
   }
   #head-line {
@@ -102,7 +102,6 @@ body {
     border-bottom: 1vw solid black;
     position: absolute;
     margin-left: 20%;
-    
   }
 
   #meal-div div {
@@ -117,11 +116,11 @@ body {
     text-align: center;
     margin-top: 15%;
     margin-bottom: 10%;
-    font-size: 4vw;
-    margin-left: 10%;
+    font-size: 3vw;
+    margin-left: 15%;
     order: 3;
-    padding-left: 2vw;
-    padding-right: 7vw;
+    padding-left: 3vw;
+    padding-right: 8vw;
   }
   #GetRecipesBtn {
     width: 15vw;
@@ -136,4 +135,8 @@ body {
     font-size: 2vw;
     padding-bottom: 0.5vw;
   }
+
+  /* #meal-div div:nth-last-child:nth-last-child(-n + 2) {
+    display: block;
+  } */
 }
