@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Sansita", sans-serif;
+}
+#country-container {
+  margin-top: 15vw;
+  margin-bottom: 5vw;
+}
+#head-line {
+  font-size: 10vw;
+  text-align: center;
+  color: black;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#line {
+  width: 60vw;
+  height: 1vw;
+  border-bottom: 1vw solid black;
+  position: absolute;
+  margin-left: 18%;
+}
+
+#meal-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#meal-div div {
+  flex: 2 0 30%;
+  margin: 10vw 3vw 0vw 3vw;
+  height: auto;
+  box-sizing: border-box;
+  background-color: white;
+  border: 0.8vw solid #ff9d00;
+  border-radius: 11vw;
+
+  box-shadow: 0.5vw 1vw 1vw rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-flow: column;
+}
+
+#countryName {
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-size: 6vw;
+  margin-left: 10%;
+  order: 3;
+  padding-left: 2vw;
+  padding-right: 7vw;
+}
+#GetRecipesBtn {
+  width: 32vw;
+  height: 8vw;
+  align-items: center;
+  margin-left: 11%;
+  margin-bottom: 15%;
+  line-height: 4vw;
+
+  border: none;
+  background-color: #ff9d00;
+  border-radius: 4vw;
+  box-shadow: 0.5vw 1vw 1vw rgba(0, 0, 0, 0.25);
+  order: 4;
+
+  font-size: 5vw;
+  font-family: "Sansita";
+  color: rgb(255, 255, 255);
+  padding-bottom: 1vw;
+}
+
+#GetRecipeBtn:hover {
+  background-color: #ffaf2f;
+  color: rgb(0, 0, 0);
+}
+
+#GetRecipeBtn:active {
+  background-color: #ff9d00;
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #country-container {
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+  }
+  #head-line {
+    font-size: 5vw;
+    text-align: center;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #line {
+    width: 60vw;
+    height: 0.5vw;
+    border-bottom: 1vw solid black;
+    position: absolute;
+    margin-left: 20%;
+  }
+
+  #meal-div div {
+    flex: 4 0 10%;
+    margin: 8vw 3vw 0vw 3vw;
+
+    width: 20vw;
+    border-radius: 7vw;
+  }
+
+  #countryName {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 3vw;
+    margin-left: 15%;
+    order: 3;
+    padding-left: 3vw;
+    padding-right: 8vw;
+  }
+  #GetRecipesBtn {
+    width: 15vw;
+    height: 4vw;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 15%;
+    line-height: 3vw;
+
+    order: 4;
+
+    font-size: 2vw;
+    padding-bottom: 0.5vw;
+  }
+  #GetRecipesBtn:hover {
+    border: .3vw solid #000000;
+    background-color: white;
+    color: #000000;
+  }
+
+  #GetRecipesBtn:active {
+    background-color: #ff9d00;
+    color: rgb(255, 255, 255);
+    border: none;
+
+  }
+  /* #meal-div div:nth-last-child:nth-last-child(-n + 2) {
+    display: block;
+  } */
+}
