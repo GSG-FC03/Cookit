@@ -16,7 +16,7 @@ showCountries = (meals) => {
     // countryName
     const countryName = document.createElement("h1"); //create h1 element in the html file
     countryName.value= meals.strArea; //assign value to the element
-    countryName.innerText = meals.strArea + " Cusisine"; // assign inner text with the info from the api
+    countryName.innerText = meals.strArea + " Cuisine"; // assign inner text with the info from the api
     countryName.id = "countryName"; //assign an id to it
     countrycuisine.appendChild(countryName); //make the h1 a child of the div
 
@@ -29,7 +29,7 @@ showCountries = (meals) => {
         recipesBtn.addEventListener("click", function (e) {
         console.log(recipesBtn.previousElementSibling.value);
         localStorage.setItem("0",recipesBtn.previousElementSibling.value);
-        location.href ="../recipe/recipe.html";
+        location.href ="../cousins/cuisine.html";
 
       });
     });
