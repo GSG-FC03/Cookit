@@ -27,9 +27,10 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
     const mealbutton=document.createElement("button")
     mealbutton.setAttribute("class","recipe-button")
     mealbutton.textContent= "Get Recipe"
-    mealbutton.addEventListener('click',()=>{
-        localStorage.setItem ("id",`${mealsArray[i].idMeal}`)
-        location.href="../recipe/recipe.html";
+    mealbutton.addEventListener("click", function (e) {
+        console.log(mealbutton.previousElementSibling.value);
+        localStorage.setItem("1",mealbutton.previousElementSibling.value);
+        location.href ="../recipe/recipe.html";
     }
     
     )
