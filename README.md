@@ -5,7 +5,7 @@ the place to find the best recipes from different places.
 ## ✧ Links
 - [Github link](https://github.com/GSG-FC03/Cookit)
 - [Figma design](https://www.figma.com/file/lyQTgG7zL7czNdGOkra6YO/Food-Recipe-App?node-id=24%3A133)
-- [Live link]()
+- [Live link](https://gsg-fc03.github.io/Cookit/)
 
 ## ✧ Problem 
 Many people around the world like to cook their traditional food but they are unable due to lack experience and insufficient tradional food  cook recipes apps
