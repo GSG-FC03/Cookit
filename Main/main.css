@@ -72,17 +72,20 @@ body {
   padding-bottom: 1vw;
 }
 
-#GetRecipeBtn:hover {
-  background-color: #ffaf2f;
-  color: rgb(0, 0, 0);
+#GetRecipesBtn:hover {
+  border: .3vw solid #000000;
+  background-color: white;
+  color: #000000;
 }
 
-#GetRecipeBtn:active {
+#GetRecipesBtn:active {
   background-color: #ff9d00;
   color: rgb(255, 255, 255);
+  border: none;
+
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1024px) {
   /* hi-res laptops and desktops */
   #country-container {
     margin-top: 8vw;
@@ -135,19 +138,8 @@ body {
     font-size: 2vw;
     padding-bottom: 0.5vw;
   }
-  #GetRecipesBtn:hover {
-    border: .3vw solid #000000;
-    background-color: white;
-    color: #000000;
-  }
 
-  #GetRecipesBtn:active {
-    background-color: #ff9d00;
-    color: rgb(255, 255, 255);
-    border: none;
-
-  }
-  /* #meal-div div:nth-last-child:nth-last-child(-n + 2) {
+  /* #meal-div:last-child {
     display: block;
   } */
 }
