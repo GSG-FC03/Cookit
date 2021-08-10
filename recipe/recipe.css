@@ -68,8 +68,8 @@ line-height: 16px;
 
 .recipe.description{
     align-items: center;
-width: 308px;
-height: 378px;
+width: 400px;
+height: auto;
 left: 40px;
 top: 266px;
 background: #FF9D00;
