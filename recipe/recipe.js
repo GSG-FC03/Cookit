@@ -5,8 +5,8 @@ const image = document.getElementsByClassName("image")[0];
 const description = document.getElementsByClassName("recipe description")[0];
 const recipeN = document.getElementsByClassName("recipeN")[0];
 const p = document.getElementsByTagName("p")[0];
-
-fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=52977 ")
+const getmealId=localStorage.getItem(1)
+fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${getmealId} `)
   .then((response) => {
     if (response.status !== 200) {
       console.log(
