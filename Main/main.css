@@ -3,8 +3,7 @@ body {
   font-family: "Sansita", sans-serif;
 }
 #country-container {
-  margin-top: 15vw;
-  margin-bottom: 5vw;
+  margin: 15vw 3vw 5vw 3vw;
 }
 #head-line {
   font-size: 10vw;
@@ -27,9 +26,13 @@ body {
   flex-wrap: wrap;
 }
 
+#meal-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5vw;
+}
 #meal-div div {
-  flex: 2 0 30%;
-  margin: 10vw 3vw 0vw 3vw;
+  margin: 10vw 0vw 0vw 0vw;
   height: auto;
   box-sizing: border-box;
   background-color: white;
@@ -56,8 +59,7 @@ body {
   width: 32vw;
   height: 8vw;
   align-items: center;
-  margin-left: 11%;
-  margin-bottom: 15%;
+  margin: 2vw 0vw 5vw 4.5vw;
   line-height: 4vw;
 
   border: none;
@@ -73,7 +75,7 @@ body {
 }
 
 #GetRecipesBtn:hover {
-  border: .3vw solid #000000;
+  border: 0.3vw solid #000000;
   background-color: white;
   color: #000000;
 }
@@ -82,7 +84,6 @@ body {
   background-color: #ff9d00;
   color: rgb(255, 255, 255);
   border: none;
-
 }
 
 @media (min-width: 1024px) {
@@ -90,6 +91,9 @@ body {
   #country-container {
     margin-top: 8vw;
     margin-bottom: 5vw;
+    margin-left: -1vw;
+    margin-right: 2vw;
+
   }
   #head-line {
     font-size: 5vw;
@@ -106,12 +110,14 @@ body {
     position: absolute;
     margin-left: 20%;
   }
-
+  #meal-div {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1vw;
+  }
   #meal-div div {
-    flex: 4 0 10%;
     margin: 8vw 3vw 0vw 3vw;
 
-    width: 20vw;
     border-radius: 7vw;
   }
 
