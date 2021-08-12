@@ -1,6 +1,6 @@
 const mealContainer = document.getElementById("meal");
 const searchContainer = document.getElementById("search-meal");
-
+const errorContainer = document.getElementById("error-message");
 let country = localStorage.getItem(0);
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
@@ -74,6 +74,16 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
             location.href = "../recipe/recipe.html";
           });
           searchContainer.appendChild(mealbutton);
+        }
+
+        else{
+          mealContainer.style.display = "none";
+          searchContainer.style.display = "none";
+          // const errorMessage = document.createElement("h2");
+          // errorMessage.textContent = "no results with your input";
+          // console.log(errorMessage)
+          // errorContainer.appendChild(errorMessage);
+
         }
       }
     });
