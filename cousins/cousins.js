@@ -11,22 +11,32 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
     mealsArray = Response.meals;
 
     for (i = 0; i <= mealsArray.length - 1; i++) {
+      // create div
       const mealBox = document.createElement("div");
       mealBox.setAttribute("class", "meal-box");
       mealContainer.appendChild(mealBox);
+
+      // create imgContainer in the div
       const imgContainer = document.createElement("div");
       imgContainer.setAttribute("class", "meal-img");
       mealBox.appendChild(imgContainer);
-      const mealimage = document.createElement("img");
 
+      // create img element in the div
+      const mealimage = document.createElement("img");
       mealimage.src = mealsArray[i].strMealThumb;
       mealBox.appendChild(mealimage);
+
+      // create div in the div
       const mealName = document.createElement("div");
       mealName.setAttribute("class", "meal-name");
       mealBox.appendChild(mealName);
+
+      // create h2 in the div
       const mealHeader = document.createElement("h2");
       mealHeader.textContent = mealsArray[i].strMeal;
       mealBox.appendChild(mealHeader);
+
+      // create button in the div
       const mealbutton = document.createElement("button");
       mealbutton.setAttribute("class", "recipe-button");
       mealbutton.textContent = "Get Recipe";
@@ -42,30 +52,38 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
     searchBtn.addEventListener("click", function (e) {
       const inputValue = searchInput.value;
       for (let i = 0; i < mealsArray.length; i++) {
-        // console.log(mealsArray[i].strMeal)
 
         if (mealsArray[i].strMeal.includes(inputValue)) {
-          // mealsArray.clear();
-          // mealsArray.addAll( mealsArray[i].strMeal.includes(inputValue));
-          console.log(mealsArray[i].strMeal);
-          mealContainer.style.display = "none";
 
+          console.log(mealsArray[i].strMeal);
+          mealContainer.style.display = "none"; //make meal container invisible
+          
+          // create div
           const mealBox = document.createElement("div");
           mealBox.setAttribute("class", "meal-box");
           searchContainer.appendChild(mealBox);
+
+          // create imgContainer in the div
           const imgContainer = document.createElement("div");
           imgContainer.setAttribute("class", "meal-img");
           searchContainer.appendChild(imgContainer);
-          const mealimage = document.createElement("img");
 
+          // create img element in the div
+          const mealimage = document.createElement("img");
           mealimage.src = mealsArray[i].strMealThumb;
           searchContainer.appendChild(mealimage);
+
+          // create div in the div
           const mealName = document.createElement("div");
           mealName.setAttribute("class", "meal-name");
           searchContainer.appendChild(mealName);
+
+          // create h2 in the div
           const mealHeader = document.createElement("h2");
           mealHeader.textContent = mealsArray[i].strMeal;
           searchContainer.appendChild(mealHeader);
+
+          // create button in the div
           const mealbutton = document.createElement("button");
           mealbutton.setAttribute("class", "recipe-button");
           mealbutton.textContent = "Get Recipe";
