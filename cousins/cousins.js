@@ -1,10 +1,12 @@
 const mealContainer = document.getElementById("meal");
 let country = localStorage.getItem(0);
-
+const searchInput= document.getElementById("search-input")
+const searchBtn= document.getElementById("search-button")
+let mealsArray=[]
 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
   .then((data) => data.json())
   .then((Response) => {
-    const mealsArray = Response.meals;
+    mealsArray = Response.meals;
 
     for (i = 0; i <= mealsArray.length - 1; i++) {
       const mealBox = document.createElement("div");
@@ -33,4 +35,20 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
 
       mealBox.appendChild(mealbutton);
     }
+  })
+  .then((response) => {
+    searchBtn.addEventListener("click", function (e) {
+      const inputValue = searchInput.value;
+      for(let i=0;i<mealsArray.length;i++){
+        // console.log(mealsArray[i].strMeal)
+
+      if( mealsArray[i].strMeal.includes(inputValue)){
+        // mealsArray.clear();
+        // mealsArray.addAll( mealsArray[i].strMeal.includes(inputValue));
+        console.log( mealsArray[i].strMeal.includes(inputValue))
+
+      }
+
+      }
+    });
   });
