@@ -10,7 +10,9 @@ backBtn.addEventListener("click",()=>{
   location.href="../Main/main.html"
   
 })
-
+const reloadBtn=document.getElementsByClassName("reload-Search")[0]
+reloadBtn.addEventListener("click",()=>{
+  location.reload()})
 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
   .then((data) => data.json())
   .then((Response) => {
@@ -29,10 +31,9 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
       renderMeals(dataFilter, searchContainer);
       searchInput.value = "";
     });
-    backBtn.addEventListener("click",()=>{
-     location.reload()
+    
       
-    })
+    
   });
 
 function renderMeals(array, container) {
