@@ -86,8 +86,8 @@ img {
   font-size: 1.4rem;
 }
 h2 {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 .recipe-button {
   text-decoration: none;
@@ -159,5 +159,24 @@ h2 {
   }
   .Search-type {
     font-size: 5vw;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+
+  .recipe-button {
+    text-decoration: none;
+    color: white;
+    background: orange;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 250px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    transition: all 0.45 linear;
+    border: none;
+    margin-bottom: 10%;
   }
 }
