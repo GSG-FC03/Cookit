@@ -78,7 +78,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
 
         else{
           mealContainer.style.display = "none";
-          searchContainer.style.display = "none";
+          // searchContainer.style.display = "none";
           // const errorMessage = document.createElement("h2");
           // errorMessage.textContent = "no results with your input";
           // console.log(errorMessage)
