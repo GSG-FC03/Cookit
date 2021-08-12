@@ -154,5 +154,9 @@ h2 {
     margin-top: 4vw;
     font-size: 3vw;
   }
+
+  .Search-box {
+    margin: 10vw 0vw 0vw 8vw;
+  }
 }
 
