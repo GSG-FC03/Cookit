@@ -51,6 +51,7 @@ function renderMeals(array, container) {
     // create img element in the div
     const mealimage = document.createElement("img");
     mealimage.src = array[i].strMealThumb;
+    mealimage.setAttribute("class","meal-img")
     mealBox.appendChild(mealimage);
 
     // create div in the div
