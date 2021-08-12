@@ -14,13 +14,13 @@ body{
     width: 55px;
     height: 55px;
     font-size: 1.8rem;
-    background-color: orange;
-    color:white;
+    background-color: white;
+    color:orange;
     border-style: none;
-    border-radius: 2rem 2rem 2rem 2rem;
     position: fixed;
     left:8%;
     top:5%;
+    position: absolute;
     
 }
 
