@@ -18,7 +18,7 @@ body{
     color:orange;
     border-style: none;
     position: fixed;
-    left:8%;
+    left: 4%;
     top:5%;
     position: absolute;
     
@@ -119,6 +119,9 @@ body{
 }
 .recipe-button:hover{
     background: orangered;
+}
+.meal-img{
+    width: 100%;
 }
 @media screen and(min-width:600px){
     .Search-box{
