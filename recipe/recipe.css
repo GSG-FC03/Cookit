@@ -10,7 +10,20 @@
     right: 8.8%;
     top: 1.66%;
     bottom: 91.55%;
-    background: #FF9D00;
+    background: #ffffff;
+    color: #FF9D00;
+font-size: 40px;
+border-radius: 50%;
+width: 41px;
+height: 41px;
+}
+.fas.fa-chevron-left{
+    position: absolute;
+    left: 3.5%;
+    right: 92%;
+    top: 1.66%;
+    bottom: 91.55%;
+    color: #FF9D00;
 font-size: 40px;
 border-radius: 50%;
 width: 41px;
@@ -68,7 +81,7 @@ line-height: 16px;
 
 .recipe.description{
     align-items: center;
-width: 400px;
+width: 363px;
 height: auto;
 left: 40px;
 top: 266px;
