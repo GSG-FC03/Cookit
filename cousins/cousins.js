@@ -5,6 +5,11 @@ let country = localStorage.getItem(0);
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
 let mealsArray = [];
+const backBtn=document.getElementsByClassName("back-Btn")[0]
+backBtn.addEventListener("click",()=>{
+  location.href="../Main/main.html"
+  
+})
 
 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
   .then((data) => data.json())
@@ -24,6 +29,10 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
       renderMeals(dataFilter, searchContainer);
       searchInput.value = "";
     });
+    backBtn.addEventListener("click",()=>{
+     location.reload()
+      
+    })
   });
 
 function renderMeals(array, container) {
