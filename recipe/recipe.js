@@ -30,8 +30,8 @@ fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${getmealId} `)
       // Show Meal PIC name in HTML Page
       image.src = element.strMealThumb;
  
-      // Show meal name in HTML Page
-      recipeN.textContent = element.strMeal;
+     
+      
 
       // Show meal Ingredient in HTML Page
       p.textContent = element.strInstructions;
