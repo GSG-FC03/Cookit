@@ -17,7 +17,29 @@ body {
     align-items: stretch;
     text-align: center;
   }
-  
+  .reload-Search{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: orange;
+    color: white;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;      
+}
+.back-Btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: white;
+    color:orange;
+    border-style: none;
+    position: fixed;
+    left: 4%;
+    top:5%;
+    position: absolute;
+    
+}
   .Search-type,
   .search-btn {
     width: 45%;
