@@ -1,3 +1,4 @@
+
 body{
     max-width: 1250px;
     margin: 0 auto;
@@ -8,6 +9,19 @@ body{
     font-size: 1.05rem;
     font-family: "Sansita", sans-serif;
 
+}
+.back-Btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: white;
+    color:orange;
+    border-style: none;
+    position: fixed;
+    left: 4%;
+    top:5%;
+    position: absolute;
+    
 }
 
 
@@ -38,6 +52,20 @@ body{
     font-size: 25px;
     text-align: center;
 }
+.reload-Search{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background-color: orange;
+    color: white;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    
+    
+    
+    /* border: none; */
+}
 .search-btn{
     width: 55px;
     height: 55px;
@@ -48,7 +76,6 @@ body{
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     transition: all 0.45s linear;
-
 
 }
 .search-btn:hover{
@@ -92,6 +119,9 @@ body{
 }
 .recipe-button:hover{
     background: orangered;
+}
+.meal-img{
+    width: 100%;
 }
 @media screen and(min-width:600px){
     .Search-box{

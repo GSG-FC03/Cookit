@@ -5,7 +5,14 @@ let country = localStorage.getItem(0);
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
 let mealsArray = [];
-
+const backBtn=document.getElementsByClassName("back-Btn")[0]
+backBtn.addEventListener("click",()=>{
+  location.href="../Main/main.html"
+  
+})
+const reloadBtn=document.getElementsByClassName("reload-Search")[0]
+reloadBtn.addEventListener("click",()=>{
+  location.reload()})
 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
   .then((data) => data.json())
   .then((Response) => {
@@ -24,6 +31,9 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`)
       renderMeals(dataFilter, searchContainer);
       searchInput.value = "";
     });
+    
+      
+    
   });
 
 function renderMeals(array, container) {
@@ -41,6 +51,7 @@ function renderMeals(array, container) {
     // create img element in the div
     const mealimage = document.createElement("img");
     mealimage.src = array[i].strMealThumb;
+    mealimage.setAttribute("class","meal-img")
     mealBox.appendChild(mealimage);
 
     // create div in the div
