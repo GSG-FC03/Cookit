@@ -61,7 +61,9 @@ function renderMeals(array, container) {
 
     // create h2 in the div
     const mealHeader = document.createElement("h2");
+    mealHeader.value=array[i].idMeal
     mealHeader.textContent = array[i].strMeal;
+
     mealBox.appendChild(mealHeader);
 
     // create button in the div

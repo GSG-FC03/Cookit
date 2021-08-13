@@ -1,0 +1,123 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.fas.fa-times-circle{
+    position: absolute;
+    left: 87.47%;
+    right: 8.8%;
+    top: 1.66%;
+    bottom: 91.55%;
+    background: #ffffff;
+    color: #FF9D00;
+font-size: 40px;
+border-radius: 50%;
+width: 41px;
+height: 41px;
+}
+.fas.fa-chevron-left{
+    position: absolute;
+    left: 3.5%;
+    right: 92%;
+    top: 1.66%;
+    bottom: 91.55%;
+    color: #FF9D00;
+font-size: 40px;
+border-radius: 50%;
+width: 41px;
+height: 41px;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipe.name{
+position: absolute;
+box-sizing: content-box;
+width:60vw;
+height:5vh;
+font-family: Andada;
+font-style: normal;
+font-weight: normal;
+font-size: 27px;
+line-height: 20px;
+background: #FF9D00;
+border-radius: 11px;
+color: #FFFFFF; 
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+align-items: center;
+    
+}
+
+
+.Category{
+   
+    width: 60%;
+    height: 5vh;
+    font-family: Andada;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 20px;
+    margin-top: 130px;
+    background: #FF9D00;
+    border-radius: 11px;
+    text-align: center;
+    color: #FFFFFF; 
+    text-align: center;
+    box-sizing: content-box;
+    align-items: center;
+    overflow-wrap: break-word;
+    padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.image{
+    position: absolute;
+    width: 176px;
+    height: 167px;
+    top: 233px;
+    border-radius: 50%;
+    align-items: center;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+
+.recipe.description{
+    position:absolute;
+    align-items: center;
+width: 363px;
+height: auto;
+top: 293px;
+background: #FF9D00;
+border-radius: 33px;
+margin-top: 100px;
+box-sizing: content-box;
+text-align: center;
+}
+
+.recipe.description h1{
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.recipe.description p{
+padding: 15px;
+margin-top: 30px;
+font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+}
