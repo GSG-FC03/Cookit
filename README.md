@@ -10,7 +10,7 @@ Create an app with wide variety of traditional food recipes from all over the wo
 
 
 ## Live Demo
-[live link](https://www.figma.com/file/lyQTgG7zL7czNdGOkra6YO/Food-Recipe-App?node-id=24%3A159).
+[live link](https://gsg-fc03.github.io/Cookit/).
 
 
 
